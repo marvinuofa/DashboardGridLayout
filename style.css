@@ -22,11 +22,70 @@ time, mark, audio, video {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 100vh;
 }
-div{
-    border:1px solid white
-}
+
 .sidebar{
     display:grid;
     background-color: blue;
-    grid-template-rows: minmax(60px,70px) repeat(11, minmax(20px,50px));
+    grid-template-rows: minmax(30px,70px) repeat(11, minmax(20px,50px));
+}
+.content{
+    display:grid;
+    background-color: brown;
+    grid-template-rows: 2fr 8fr;
+}
+.header{
+    display:grid; 
+    grid-template-columns: 3fr 2fr;
+    border:3px solid yellow;
+}
+.search{
+    display:flex;
+    align-items: center ;
+    justify-content: left;
+}
+.search input{
+    width:70%;
+    border: 2px solid #ccc;  /* Border color */
+    border-radius: 25px;      /* Makes it rounded */
+    outline: none;            /* Removes default focus outline */
+    background-color: #ccc;
+    min-height: 25px;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+.search input:focus {
+    border-color: #007BFF;   /* Border color when focused */
+}
+.search i{
+    border: none;
+    cursor: pointer;
+    font-size: 25px; 
+
+}
+  
+.search i{
+    padding:0px 2% 0px 5%;
+}
+.container-content{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.content-body{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+.content-aside{
+    display: grid;
+    grid-template-rows: 4fr 1fr 4fr;
+}
+.content-header{
+    display: grid ;
+    grid-template-columns: 3fr 1fr;
+}
+div{
+    border:1px solid white
 }
