@@ -17,9 +17,13 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 }
+h2{
+    display: inline;
+    margin: none;
+}
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 100vh;
 }
 
@@ -32,18 +36,25 @@ time, mark, audio, video {
     display:grid;
     background-color: brown;
     grid-template-rows: 2fr 8fr;
+    border: 5px solid green;
 }
 .header{
     display:grid; 
-    grid-template-columns: 3fr 2fr;
-    border:3px solid yellow;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 1fr;
+
 }
-.search{
+
+.container-search{
     display:flex;
     align-items: center ;
     justify-content: left;
 }
-.search input{
+.search{
+    padding:0px 2% 0px 5%;
+    width: 100%;
+}
+.search-bar{
     width:70%;
     border: 2px solid #ccc;  /* Border color */
     border-radius: 25px;      /* Makes it rounded */
@@ -60,15 +71,31 @@ time, mark, audio, video {
     border: none;
     cursor: pointer;
     font-size: 25px; 
-
 }
-  
-.search i{
+.container-profile{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile{
     padding:0px 2% 0px 5%;
 }
+
+.container-filter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-greetings{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container-content{
     display: grid;
     grid-template-rows: 1fr 10fr;
+    border: 5px solid gold;
 }
 .content-body{
     display:grid;
