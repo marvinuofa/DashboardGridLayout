@@ -17,9 +17,22 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 }
-h2{
+h2,h1{
     display: inline;
     margin: none;
+}
+.container-sidebar-logo{
+    display:flex;
+}
+.sidebar .sidebar-logo{
+    width:100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.sidebar .sidebar-logo i{
+    margin-right: 4%;
+    margin-left: 8.5%;
 }
 .container{
     display: grid;
@@ -29,9 +42,18 @@ h2{
 
 .sidebar{
     display:grid;
-    background-color: blue;
-    grid-template-rows: minmax(30px,70px) repeat(11, minmax(20px,50px));
+    background-color: #2587be;
+    grid-template-rows: minmax(30px,105px) repeat(10, minmax(20px,45px));
+    color: white;
 }
+.sidebar > div > div{
+    font-size: 1.2rem;
+}
+.sidebar > div > div > i{
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
 .content{
     display:grid;
     background-color: brown;
@@ -42,7 +64,6 @@ h2{
     display:grid; 
     grid-template-columns: 4fr 2fr;
     grid-template-rows: 1fr 1fr;
-
 }
 
 .container-search{
@@ -113,6 +134,6 @@ h2{
     display: grid ;
     grid-template-columns: 3fr 1fr;
 }
-div{
-    border:1px solid white
+aside div{
+    border:1px solid white;
 }
